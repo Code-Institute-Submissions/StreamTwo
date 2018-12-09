@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Members of European Union</title>
+  <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/bootstrap.min.css')}}">
+  <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/keen-dashboards.css')}}">
+  <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/dc.css')}}">
+  <link rel="stylesheet" href="{{ url_for ('static', filename='css/custom.css')}}">
+  <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/introjs.css')}}">
+</head>
+
+<body style="background-image: url('static/images/eu-glow.jpg');
+             background-repeat: no-repeat;
+             background-size: cover;
+             background-position: center top;
+             background-attachment: fixed;">
+
+             <!--navbar-->
+  <div id="navbar-black" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="./">Members of European Union</a>
+        
+      </div>
+    </div>
+  </div>
+             <!--navbar-->
+  <div class="container"><button class="intro_button" type="button" autofocus onclick="javascript:introJs().start();">Explore the page!</button></div>
+             <!--Introduction panel-->
+  <div class="container">
+    <div class="panel panel-default">
+      <div id=cvqt class="panel-heading"><p id="introduction">Introduction - European Union</p></div>
+        <div class="panel-body"><p id="information">There have been many attempts of European unification by the use of force and aggressive foreign policy. First the Romans succeed to obey vast part of the continent.  Centuries later Napoleon vanquishes Europe, and during the XX century Germany conquers almost the whole continent by force. All these conquering wars and bloodshed conflicts weaken Europe and by the end of the Second World War, Europe is all in ruins and loses its leading positions on the global scale. The fast growing economies of the USA and China set Europe in a disadvantageous position. Formerly dominant European nations are now weakened in economic and military scope. The export of Europeans products and goods is seriously laboured due to the intense economy of USA, China and later on – Japan. The only solution to the specific situation is the establishment of a union, in order to prevent two main problems about the continent’s dark economic perspectives – Europe will try to be competitive to the aforementioned countries and it will try to prevent the event of a future conflict on its territory, by establishing a strong economic collaboration. At first the economics of six Western European countries are united by the European Coal and Steel Community ratified in 1951, which over time by a number of new agreements and treaties it is transformed to the European Union in 1992 by the Maastricht Treaty. Thus Europe is trying to hold on its leading position in economic and technological scope, which has held for centuries, by creating a unique of its kind economic union.</p></div>
+      </div>
+    </div>
+ <div  id="outer" class="container-fluid">
+    <div class="row">
+            <!--Introduction panel-->
+
+            <!-- menu select -->
+      <div class="col-sm-6">
+        <div class="chart-wrapper" id="select">
+          <div class="chart-title">
+            <p>Select a country</p>
+          </div>
+          <div class="chart-stage" data-step="1" data-intro="List of all members of the European Union (including UK – database contains information until 2015). Select all or a single country to view related information about your choice." style="font-weight: normal" data-position="right">
+            <div id="menu-select"></div>
+            <p id="status">Select a EU member to see more about its status quo in the union</p>
+          </div>
+        </div>
+      </div>
+      <!-- menu select -->
+ 
+      <!-- Selected countries -->
+      <div class="col-sm-3">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            <p>Number of countries in EU</p>
+          </div>
+          <div class="chart-stage" data-step="2" data-intro="Number of countries in the EU." style="font-weight: normal" data-position="right">
+            <div id="number-countries-nd"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Selected countries -->
+ 
+      <!-- UE parlament -->
+      <div class="col-sm-3">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            <p>Seats in EU parliament</p>
+          </div>
+          <div class="chart-stage" data-step="3" data-intro="Seats in EU parliament by each country and all together." style="font-weight: normal" data-position="right">
+            <div id="seats-in-eu-nd"></div>
+          </div>
+        </div>
+      </div>
+      <!-- UE parlament -->
+
+      <!-- Language -->
+      <div class="col-sm-4">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            <p>Official language</p>
+          </div>
+          <div class="chart-stage" data-step="4" data-intro="Official language/s in the selected country." style="font-weight: normal" data-position="right">
+            <div id="language-row-chart"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Language -->
+
+      <!-- Monetary union -->
+      <div class="col-sm-4">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            <p>European monetary union</p>
+          </div>
+            <div class="chart-stage" data-step="5" data-intro="Is the selected country a candidate or a member to the European monetary union?" style="font-weight: normal" data-position="right">
+              <div id="european-monetary-union-row-chart"></div>
+            </div>
+          </div>
+        </div>
+          <!-- Monetary union -->
+ 
+          <!-- Currency Pie -->
+          <div class="col-sm-4">
+            <div class="chart-wrapper">
+              <div class="chart-title">
+               <p>Currency</p>
+            </div>
+            <div class="chart-stage" data-step="6" data-intro="Type of currency being used in the selected country." style="font-weight: normal" data-position="right">
+              <div id="currency-chart"></div>
+            </div>
+          </div>
+      </div>
+      <!-- Currency Pie -->
+
+      <!-- Time Chart -->
+      <div class="col-sm-8">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                <p>Year of entrance</p>
+              </div>
+              <div class="chart-stage" data-step="7" data-intro="Year of entrance of the selected country." style="font-weight: normal" data-position="right">
+                <div id="time-chart"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Time Chart -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <p class="small text-muted"></p>
+  <script src="{{ url_for ('static', filename='lib/js/jquery.min.js')}}"></script>
+  <script src="{{ url_for ('static', filename='lib/js/bootstrap.min.js')}}"></script>
+  <script src="{{ url_for ('static', filename='lib/js/crossfilter.js')}}"></script>
+  <script src="{{ url_for ('static', filename='lib/js/d3.js')}}"></script>
+  <script src="{{ url_for ('static', filename='lib/js/dc.js')}}"></script>
+  <script src="{{ url_for ('static', filename='lib/js/queue.js')}}"></script>
+  <script src="{{ url_for ('static', filename='lib/js/keen.min.js')}}"></script>
+  <script src="{{ url_for ('static', filename='js/graph.js')}}"></script>
+  <script src="{{ url_for ('static', filename='lib/js/intro.js')}}"></script>
+</body>
+</html>

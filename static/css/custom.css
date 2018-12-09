@@ -1,0 +1,147 @@
+/*Navbar options*/
+#navbar-black {
+   background-color: rgba(34,34, 34, 1);
+   background: -webkit-linear-gradient(top, rgba(60, 60, 60, 1) 0%, rgba(34, 34, 34, 1) 100%);
+   background: linear-gradient(to bottom, rgba(60, 60, 60, 1) 0%, rgba(34, 34, 34, 1) 100%);
+}
+.navbar{
+   opacity: 0.9;
+   font-family: "Berlin Sans FB";
+}
+.navbar-brand{
+   font-size: 27px;
+}
+/*Navbar options*/
+
+/*Introduction panel*/
+.panel{
+   margin-top: 100px;
+   margin-bottom: 70px;
+   opacity: 0.93;
+   -webkit-box-shadow: 0 5px 10px -3px #999;
+   -moz-box-shadow: 0 5px 10px -3px #999;
+   box-shadow: 0 5px 10px -3px #999;
+   border: 1px solid  #000066;
+   background-color:#262626;
+   color: white;
+}
+#cvqt{
+   background-color: #1344a0;
+   color: white;
+   border-bottom: 1px solid black;
+}
+/*Introduction panel*/
+
+/*Charts options*/
+#number-countries-nd {
+   font-size: 60px;
+}
+ 
+#seats-in-eu-nd {
+   font-size: 60px;
+}
+ 
+.dc-chart g.row text {
+   fill: black;
+   font-size: 12px;
+}
+
+.dc-select-menu {
+   background:    #1E90FF;
+   width: 80%;
+   border: none;
+   position: relative;
+   height: 35px;
+   font-size: 15px;
+   color: white;
+   vertical-align: middle;
+   text-align: center;
+   margin-top: 25px;
+   padding-top: 4px;
+   padding-bottom: 0px;
+   border-radius: 2px;
+}
+#status{
+   margin-left: auto;
+   margin-top: 28px;
+}
+#select{
+   height: 132px;
+}
+#currency-chart{
+   height: 255px;
+}
+
+#language-row-chart{
+   height: 617px;
+}
+
+.chart-wrapper{ /*chart box options*/
+   background-color:#262626;
+   opacity: 0.93;
+   -webkit-box-shadow: 0 5px 10px -3px #999;
+   -moz-box-shadow: 0 5px 10px -3px #999;
+   box-shadow: 0 5px 10px -3px #999;
+   border: 1px solid  #000066;
+   border-radius: 2px;
+
+}
+.chart-title{
+   background-color: #1344a0;
+   border-radius: 2px;
+   height: 35px;
+}
+
+.chart-stage{
+   background: none;
+   position: relative;
+   font-size: 15px;
+   color: white;
+   vertical-align: middle;
+   text-align: center;
+   padding-top: 12px;
+   padding-bottom: 0px;
+}
+/*Charts options*/
+
+/*Paragraphs and headings*/
+}
+h5{
+   color: white;
+}
+p{
+   color: white;
+}
+#introduction{
+   text-align: center;
+   font-family: "Berlin Sans FB";
+   font-size: 20px;
+   margin-bottom: 0px;
+}
+#information{
+   font-family: "Berlin Sans FB";
+   font-size: 15px;
+   text-align: justify;
+   line-height: 1.5;
+}
+#information:first-letter{
+   font-weight: bolder;
+   font-size: 2em;
+}
+.intro_button{
+   margin:auto;
+   margin-top:130px;
+   display: block;
+   background-color:#FFD700;
+   border: 1px solid blue; 
+   border-radius: 5px;
+   height: 50px;
+   width: 200px;
+   box-shadow: 0 5px 10px -3px #999;
+   font-family: "Berlin Sans FB";
+   font-size:22px;
+}
+.intro_button:hover{
+   background-color:    #F0E68C;
+
+/*Paragraphs and headings*/
